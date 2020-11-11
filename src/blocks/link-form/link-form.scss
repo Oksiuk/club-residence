@@ -1,0 +1,104 @@
+.link-form {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 506px;
+    width: 767px;
+    padding: 20px;
+    background-image: url('./img/form-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 382px 100%;
+    background-position-x: calc(767px - 382px); 
+    background-color: #fff;
+    z-index: 10;
+
+    &__submit {
+        @include button;
+        border: none;
+        margin: 20px 0 20px 47px;
+    }
+
+    &__title, &__fields  {
+        color: $black;
+        margin-left: 47px;
+        width: 265px;
+    }
+
+    &__fields {
+        & > * {
+            display: block;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 31px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $grey;
+        background-color: transparent;
+    }
+
+    label {
+        padding-left: 10px;
+        line-height: inherit;
+    }
+
+    &__reset {
+        outline: none;
+        width: 28px;
+        height: 28px;
+        position: relative;
+        background: #FDFBFB;
+        border: 0.5px solid $primary;
+        border-radius: 50%;
+
+        &::before, &::after {
+            position: absolute;
+            display:inline-block;
+            top: 7px;
+            left: 13.5px;
+            content: '';
+            height: 13px;
+            width: 1px;
+            background-color: #000;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(135deg);
+        }
+    }
+
+    &__reset-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: rgba(33, 34, 36, .3);
+        border: .5px solid $primary;      
+    }
+
+
+    &__title {
+        margin-top: 50px;
+        margin-bottom: 31px;
+    }
+
+    &__wrapper {
+        position: relative;
+        height: 466px;
+        border: 1px solid $primary;
+    }
+}

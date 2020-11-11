@@ -1,0 +1,29 @@
+.footer {
+    background-color: $black;
+    color: $grey-medium;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 88px;
+        max-width: 1500px;
+        padding: 0 45px;
+        margin: 0 auto;
+    }
+
+    &__lang {
+        font-size: 10px;
+        color: $grey-dark;
+        text-transform: uppercase;
+        
+        .active {
+            color: $grey-medium;
+            border-bottom: 1px solid $primary;
+        }
+
+        &-ua {
+            margin-right: 15px;
+        }
+    }
+}

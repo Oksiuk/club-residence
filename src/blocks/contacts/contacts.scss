@@ -1,0 +1,88 @@
+.contacts {
+    height: calc(100% - 88px);
+    padding-top: 20px;
+
+    &__wrapper {
+        display: grid;
+        height: 100%;
+        width: 88%;
+        margin-left: 12%;
+        grid-template-columns: 212px auto;
+        grid-template-rows: auto;
+        column-gap: 40px;
+        row-gap: 37px;
+        grid-row: auto 1fr;
+    }
+
+    &__title, &__link {
+        grid-column: 1/2;
+    }
+
+    &__info {    
+        grid-column: 2/4;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    
+    &__address, &__phone, &__shedule {
+        flex: 0 1 auto;
+    }
+
+    &__address {
+        margin-left: 35px;
+    }
+
+    &__phone {
+        margin-left: 39px;
+    }
+
+    &__address::before, 
+    &__phone::before {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 24px;
+        color: $grey-dark;
+    }
+
+    &__address::before {
+        content: 'Адрес';
+    }
+
+    &__phone::before {
+        content: 'Телефон';
+    }
+
+    &__email > .link {
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__map {
+        grid-row: 2/3;
+        grid-column: 2/4;
+        min-height: 435px;
+        overflow: hidden;
+    }
+
+    &__shedule {      
+        margin-left: 18px;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;            
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 10px;
+        font-family:  'Cormorant';
+        font-size: 30px;
+        color: $black;
+    }
+
+    iframe {
+        display: block;
+    }
+}

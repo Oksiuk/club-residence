@@ -1,0 +1,56 @@
+.flat-card {
+    width: 426px;
+    background: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0px 8px 20px rgba(33, 34, 36, 0.05);
+    border-spacing: 0px;
+
+    &__body {
+        display: flex;
+        flex-flow: column wrap;
+        height: 104px;
+        width: 100%;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: calc(213px - 46px);
+            transform: translate(-50%, -50%);
+            content: '';
+            display: block;
+            width: 92px;
+            height: 0.5px;
+            transform: rotate(90deg);
+            background: $grey;
+        }
+    }
+
+    &__title {
+        text-align: left;    
+        padding-left: 30px;   
+    }
+
+    td {
+        color: $black;
+        font-weight: bold;
+        flex: 0 0 45px;
+        align-self: flex-end;
+    }
+
+    th {
+        color: $grey-dark;
+        flex: none;
+        text-align: left;
+    }
+
+    tr {
+        padding: 0 30px;
+        flex: none;
+        width: 50%;
+        font-size: 12px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}

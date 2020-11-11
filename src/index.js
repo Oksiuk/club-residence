@@ -1,0 +1,8 @@
+import './styles.scss'
+import './blocks/documents/documents'
+import './blocks/footer/footer'
+import './blocks/gallery/gallery'
+import './blocks/home/home'
+import './blocks/layouts/layouts'
+import './blocks/link-form/link-form'
+import './blocks/page-slider/page-slider'

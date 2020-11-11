@@ -1,0 +1,14 @@
+@mixin button {
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 182px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 3px;
+    background-color: $primary;
+    color: $white;   
+}

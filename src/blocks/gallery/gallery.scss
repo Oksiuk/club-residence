@@ -1,0 +1,79 @@
+.gallery {
+    &__nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        height: 103px;
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        z-index: 10;
+    }
+    
+    &__nav-item {
+        text-align: center;
+        &:first-child {
+            flex: 1 1 202px;          
+        }
+
+        &:last-child {
+            flex: 0 0 202px;
+        }
+    }
+
+    &__nav-wrapper {
+        background-color: $white;
+        width: 520px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    &__slider {
+        overflow: hidden;
+        width: 79%; 
+        left: 21%;
+    }
+
+    &__slider-controls {
+        margin-left: 150px;
+    }
+
+    &-slider__thumb-toggler {
+        width: 119px !important;
+        height: 74px;  
+        
+        &-active {
+            width: 166px !important;
+            height: 103px;  
+        }
+    }
+
+    &-slider__thumb-togglers {
+        max-width: 660px;
+
+        .slick-track {
+            height: 103px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .slick-slide { 
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: url('./img/fir-tree.png');
+        background-repeat: no-repeat;
+        background-size: 33% auto;
+        background-position-y: 70%;
+        position: relative;
+    }
+}

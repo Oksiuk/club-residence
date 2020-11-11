@@ -1,0 +1,56 @@
+.club-home-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 68px;
+    height: 52px;
+    color: $grey;
+    text-align: center;
+    position: relative;
+    
+    &__first-line {
+        grid-row: 1/2;
+        font-family: Cormorant;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.2px;               
+    }
+
+    &__second-line {
+        grid-row: 2/3;
+        display: inline-block;
+        font-family: Prata;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24.6px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 3.78px;
+            height: 3.78px;
+            border-radius: 50%;
+            background: $primary;
+            position: absolute;
+            top: 10px;
+            left: 42.5%;
+        }
+    }
+}
+
+.club-home-logo-two {
+    @extend .club-home-logo;
+    grid-template-columns: 1fr 25px;
+    width: 95px;
+    &::after {
+        transform: translateY(18px);
+        grid-column: 2/3;
+        grid-row: 1/3;
+        content: '2';
+        font-family: 'Prata';
+        font-weight: 400;
+        font-size: 41px;
+        color: $primary;
+    }        
+}

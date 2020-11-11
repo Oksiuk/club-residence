@@ -1,0 +1,20 @@
+@import "~normalize.css";
+
+@import "./blocks/_blocks-config/Cormorant.css";
+@import "./blocks/_blocks-config/Helvetica.css";
+@import "./blocks/_blocks-config/Prata.css";
+
+@import "./blocks/_blocks-config/mixins.scss";
+@import "./blocks/_blocks-config/variables.scss";
+@import "./blocks/_blocks-config/common.scss";
+
+@import './blocks/club-home-logo/club-home-logo.scss';
+@import './blocks/contacts/contacts.scss';
+@import './blocks/documents/documents.scss';
+@import './blocks/flat-card/flat-card.scss';
+@import './blocks/layouts/layouts.scss';
+@import './blocks/link-form/link-form.scss';
+@import './blocks/footer/footer.scss';
+@import './blocks/gallery/gallery.scss';
+@import './blocks/home/home.scss';
+@import './blocks/page-slider/page-slider.scss';

@@ -1,0 +1,210 @@
+body {
+    width: 100%;
+    font-family: 'Helvetica Neue Cyr Light';
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #E5E5E5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+
+.address {
+    display: inline-block;
+    padding-left: 2px;
+    letter-spacing: 0.05em;  
+    &::before {
+        content: '';
+        display: inline-block;
+        background-image: url('./img/geo.svg');
+        width: 9px;
+        height: 12.5px;
+        background-size: cover;
+        margin-right: 10px;
+    }               
+}
+
+.club-residence-logo {
+    width: 55px;
+    height: 69px;
+}
+
+.container {
+    position: relative;
+    width: 100%;  
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.link {
+    display: inline-block;
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+
+    &-secondary {
+        color: $grey;
+        font-size: 10px;
+    }
+
+    &__email-icon {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 23px;
+        background:  url('./img/letter-icon.svg') no-repeat;   
+    }
+
+    &__text {
+        border-bottom: 1px solid $primary; 
+        display: inline-block;
+    }
+}
+
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-tab {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: $black;
+    line-height: 26px;
+    padding: 9px 30px;
+    background-color: #F1F1F1;
+
+    &.active {
+        color: $primary;
+        background-color: #fff;
+    }
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.hidden {
+    display: none;
+}
+
+.phone {
+    &::before {
+        content: '';
+        display: inline-block;
+        background-image: url('./img/phone2.svg');
+        width: 12px;
+        height: 12px;
+        background-size: cover;
+        margin-right: 16px;
+    }         
+}
+
+.social-icons {
+    &__item {
+        display: inline-block;
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.slider-controls {
+    height: 59px;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    
+    &__arrows {
+        .left, .right {
+            width: 50px;
+            display: inline-block;
+            
+        }   
+
+        .left {
+            margin-right: 24px;   
+            margin-left: 11px;         
+        } 
+    }
+}
+
+.slick-arrow {
+    width: 50px;
+    display: inline-block;
+    &.arrow-left {
+        margin-right: 24px;   
+        margin-left: 11px;  
+    }
+}
+
+.slider-controls__arrows ,.slick-dots {            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-dots li {
+    list-style: none;
+    display: inline-block;
+    line-height: 19px;
+    height: 19px;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $primary;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    margin-right: 26px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+    background-color: $grey;
+}
+
+.title {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 68px;
+
+    &-primary {
+        font-size: 68px;
+    }
+
+    &-secondary {
+        @extend .title;
+        font-size: 30px;
+    }
+}
